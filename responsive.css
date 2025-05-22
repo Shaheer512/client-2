@@ -1,0 +1,383 @@
+@media (max-width: 868px) {
+  .profile-img,
+  .left,
+  .content,
+  .dotted-frame,
+  .footer,
+  .career-left,
+  .career-content h1,
+  .group-4,
+  .about-right,
+  .follow,
+  .slider-content p,
+  .slider-button {
+    display: none;
+  }
+  .navbar ul {
+    list-style: none;
+  }
+  .right {
+    background-color: white;
+  }
+  .menu {
+    display: block;
+    color: rgb(198, 185, 185);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 11rem;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  #nav-links {
+    flex-direction: column;
+    background-color: #ea0001;
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    right: 15px;
+    padding: 20px;
+    width: calc(100% - 20px);
+    height: auto;
+    display: none;
+    border-radius: 10px;
+    z-index: 101;
+    text-align: center;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+  #nav-links li:not(:last-child) {
+    display: none;
+  }
+
+  #nav-links.show li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .bg-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #ea0001bf;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    line-height: 65px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 226px;
+    height: 110px;
+    text-align: center;
+  }
+  .mobile-about {
+    display: block;
+  }
+  .mobile-hero-sign {
+    position: relative;
+  }
+  .mobile-sign {
+    position: absolute;
+    top: 59rem;
+    left: 19rem;
+  }
+  .mobile-hero {
+    position: relative;
+  }
+  .mobile-img {
+    position: absolute;
+    top: -26rem;
+    left: 80px;
+  }
+
+  .mobile-hero-frame {
+    margin-top: 15rem;
+    margin-left: 8rem;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+    gap: 20px;
+  }
+  .career {
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto 0 auto;
+    width: 90%;
+    padding: 0 1rem;
+    overflow-x: hidden;
+  }
+  .career-content {
+    margin-left: 0;
+    margin-right: 10rem;
+  }
+  .career-date {
+    margin-right: 0;
+    align-items: center;
+  }
+  .career-date :nth-child(2) {
+    margin-left: 0;
+    margin-bottom: 14rem;
+  }
+
+  .slider {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    width: 95vw;
+    height: 532px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider-left {
+    gap: 60px;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .slider-content h1 {
+    font-size: 20px;
+    letter-spacing: normal;
+    width: 276px;
+    text-align: start;
+    max-width: 450px;
+  }
+
+  .slider-content h6 {
+    width: 348px;
+    height: 68px;
+    font-size: 14px;
+    text-align: start;
+    max-width: 450px;
+  }
+
+  .slider-right img {
+    width: 90%;
+    max-width: 450px;
+    margin: 2rem auto 0 auto;
+    border-radius: 20px;
+    margin-bottom: 17rem;
+  }
+
+  .slider-mobile-button {
+    display: block;
+    position: absolute;
+    top: 90%;
+  }
+  .buttons {
+    display: flex;
+    gap: 150px;
+    align-items: center;
+  }
+
+  .buttons img {
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .profile-img,
+  .left,
+  .content,
+  .dotted-frame,
+  .footer,
+  .career-left,
+  .career-content h1,
+  .group-4,
+  .about-right,
+  .follow,
+  .slider-content p {
+    display: none;
+  }
+
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .right {
+    background-color: white;
+  }
+
+  .menu {
+    display: flex;
+    color: rgb(198, 185, 185);
+    font-size: 24px;
+    justify-content: flex-end;
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  #nav-links {
+    flex-direction: column;
+    background-color: #ea0001;
+    color: white;
+    position: absolute;
+    top: 70px;
+    left: -150px;
+    right: 100px;
+    padding: 10px 80px;
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 8px;
+    z-index: 101;
+    text-align: center;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #nav-links li:not(:last-child) {
+    display: none;
+  }
+
+  #nav-links.show li {
+    display: block;
+    padding: 8px 0;
+  }
+
+  .bg-text {
+    top: 20%;
+    font-size: 2rem;
+    width: 180px;
+    height: auto;
+    line-height: 45px;
+    letter-spacing: 2px;
+  }
+
+  .mobile-about {
+    display: block;
+    padding: 1rem;
+  }
+
+  .mobile-hero-sign {
+    position: relative;
+  }
+
+  .mobile-sign {
+    position: absolute;
+    top: 53rem;
+    left: 15rem;
+  }
+
+  .mobile-hero {
+    position: relative;
+  }
+
+  .mobile-img {
+    position: absolute;
+    top: -31.5rem;
+    left: 40px;
+    width: 80%;
+  }
+
+  .mobile-hero-frame {
+    margin-top: 10rem;
+    margin-left: 3rem;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    width: 95%;
+    padding: 15px 0;
+    gap: 15px;
+  }
+  .about-left {
+    gap: 20px;
+  }
+
+  .career {
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 0 auto;
+    width: 95%;
+    padding: 0 1rem;
+    overflow-x: hidden;
+  }
+
+  .career-content {
+    margin: 0;
+    padding: 0;
+  }
+  .career-content h2,
+  .career-content p {
+    margin-left: 1.5rem;
+  }
+
+  .career-date {
+    margin-right: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .career-date :nth-child(2) {
+    margin-left: 0;
+    margin-bottom: 10rem;
+  }
+
+  .slider {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    width: 95%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .slider-left {
+    gap: 40px;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .slider-content h1 {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .slider-content h6 {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .slider-right img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 15px;
+    margin-bottom: 10rem;
+    max-width: 350px;
+  }
+
+  .slider-button {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
