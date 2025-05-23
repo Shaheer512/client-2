@@ -2,7 +2,7 @@
 
 /* ========== GENERAL CONTAINER ========== */
 .container {
-  max-width: 1300px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -310,16 +310,39 @@ ul {
 }
 
 /* ========== SLIDER SECTION ========== */
+
+/* Core structure */
 .slider {
+  width: 100%;
+  background: #ea0001;
+  margin-top: 3.5rem;
+  height: 513px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
+}
+
+.slider-slide {
+  min-width: 100%;
+  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 513px;
-  background: #ea0001;
-  margin-top: 3.5rem;
 }
 
+/* Left & Right sections */
 .slider-left {
   display: flex;
   gap: 50px;
@@ -330,11 +353,27 @@ ul {
   object-fit: contain;
 }
 
+.slider-right {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.slider-right img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
+  margin-right: 30px;
+  border-radius: 25px;
+}
+
+/* Content styling */
 .slider-content h1 {
   font-weight: 800;
   font-size: 25px;
   line-height: 130%;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
   color: #fff;
 }
 
@@ -352,26 +391,60 @@ ul {
   font-size: 15px;
   line-height: 140%;
   color: #ffffffbf;
-  width: 380px;
+  width: 348px;
   height: 105px;
 }
 
-.slider-right img {
-  width: 500px;
-  border-radius: 25px;
-  margin-right: 50px;
-}
-
+/* Navigation buttons */
 .slider-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 4rem;
 }
+
+.slider-button button {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
+
+.slider-button span {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
+
+.slide-count {
+  display: flex;
+  gap: 10px;
+}
+
+.slide-count span {
+  width: 31px;
+  height: 0px;
+  border-width: 1px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-top: 2rem;
+}
+
+.slide-count h4 {
+  color: #ffffff;
+}
+
 .slider-mobile-button {
   display: none;
 }
-
 
 .footer {
   display: flex;
